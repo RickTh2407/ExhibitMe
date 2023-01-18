@@ -1,0 +1,16 @@
+{
+    "G00000000":{
+        "FirstName/CompanyName":"Admin",
+        "LastName":"Adminson",
+        "AdressStreet":"AdminLane",
+        "AdressHouseNr":"0",
+        "AdressZip":"0000AM",
+        "PhoneNr":"06-00000000",
+        "Email":"admin@gmail.com",
+        "ShowResidence":"True",
+        "IsStand": "True",
+        "ShowPhone":"True",
+        "ShowEmail":"True",
+        "StandNr":"S00000000"
+    }
+}

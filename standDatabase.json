@@ -1,0 +1,9 @@
+{
+    "S00000000":{
+        "StandName":"AdminStance",
+        "StandBio":"Test stance",
+        "StandPop":{
+            "1":"[set guest number here]"
+        }
+    }
+}
