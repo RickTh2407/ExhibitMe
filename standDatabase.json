@@ -1,9 +1,20 @@
 {
-    "S00000000":{
-        "StandName":"AdminStance",
-        "StandBio":"Test stance",
-        "StandPop":{
-            "1":"[set guest number here]"
+    "Stands":{
+        "S00000000":{
+            "StandName":"AdminStance",
+            "StandBio":"Test stance",
+            "KVK":"9305 6589",
+            "StandPop":{
+                "1":"G00000001"
+            }
+        },
+        "S00000001":{
+            "StandName":"InfraRed",
+            "StandBio":"Stand van bedrijf InfraRed. Gespecialiseerd in cloud opbouw en onderhoud.",
+            "KVK":"9305 6590",
+            "StandPop":{
+                "1":"G00000001"
+            }
         }
     }
 }

@@ -1,16 +1,43 @@
 {
-    "G00000000":{
-        "FirstName/CompanyName":"Admin",
-        "LastName":"Adminson",
-        "AdressStreet":"AdminLane",
-        "AdressHouseNr":"0",
-        "AdressZip":"0000AM",
-        "PhoneNr":"06-00000000",
-        "Email":"admin@gmail.com",
-        "ShowResidence":"True",
-        "IsStand": "True",
-        "ShowPhone":"True",
-        "ShowEmail":"True",
-        "StandNr":"S00000000"
+    "Guests":{
+        "G00000000":{
+            "CustomerNr":"G00000000",
+            "FirstName/CompanyName":"Admin",
+            "LastName":"Adminson",
+            "Age":"22",
+            "Gender":"Male",
+            "AdressStreet":"AdminLane",
+            "AdressHouseNr":"0",
+            "AdressZip":"0000AM",
+            "PhoneNr":"06-00000000",
+            "Email":"admin@gmail.com",
+            "Password":"Admin",
+            "ShowResidence":"True",
+            "UseAge": "True",
+            "IsStand": "True",
+            "ShowPhone":"True",
+            "ShowEmail":"True",
+            "StandNr":"S00000000"
+        },
+
+        "G00000001":{
+            "guestNr":"G00000001",
+            "FirstName/CompanyName":"Damien",
+            "LastName":"Wauben",
+            "Age":"63",
+            "Gender":"Male",
+            "AdressStreet":"cestraat",
+            "AdressHouseNr":"62",
+            "AdressZip":"0000PM",
+            "PhoneNr":"06-62626262",
+            "Email":"c@cmail.ce",
+            "Password":"OpenSesame",
+            "ShowResidence":"False",
+            "UseAge":"False",
+            "IsStand": "False",
+            "ShowPhone":"False",
+            "ShowEmail":"True",
+            "StandNr":"S00000000"
+        }
     }
 }
