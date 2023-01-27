@@ -18,6 +18,7 @@ nav {
   /* Style for the main content */
   main {
     padding-top: 75px; /* Add some space for the top navbar */
+    background-color: rgb(177, 175, 175) /* Other colour for my god damn eyes, so that they don't burn out of my skull */
   }
   /* Style for the text on the left side of the navbar */
   nav h1 {

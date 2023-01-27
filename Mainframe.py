@@ -54,10 +54,3 @@ def WriteFile():
         json.dump(ReadFile.dataG, ReadFile.gWFile)
     with open(jsonStand, "w") as sWFile:
         json.dump(ReadFile.dataS, ReadFile.sWFile)
-
-# Operating HTML file for GUI function
-def GuiMainframe():
-    import django
-    with open("Gui.html") as HTML:
-        # must be something different. i dont know what yet.
-        None
