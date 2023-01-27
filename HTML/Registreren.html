@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1><a href="Home.html"><span style = "color:orange">ExhibitMe</span></a></h1>
+    <ul>
+    </ul>
+  </nav>
+  <main>
+    <h2>Registreer voor ExhibitMe</h2>
+    <form action="submit.php" method="post">
+      <label for="firstname">Voornaam:</label><br>
+      <input type="text" id="firstname" name="firstname"><br><br>
+
+      <label for="lastname">Achternaam:</label><br>
+      <input type="text" id="lastname" name="lastname"><br><br>
+
+      <label for="age">Leeftijd:</label><br>
+      <input type="number" id="age" name="age"><br><br>
+
+      <label for="adressStr">Straatnaam:</label><br>
+      <input type="text" id="adressStr" name="adressStr"><br><br>
+
+      <label for="adressHouseNr">Huisnummer:</label><br>
+      <input type="text" id="adressHouseNr" name="adressHouseNr"><br><br>
+
+      <label for="AdressZip">Postcode:</label><br>
+      <input type="text" id="adressZip" name="adressZip"><br><br>
+      
+      <label for="phone">Telefoon nummer:</label><br>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Wachtwoord:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="useResidence">Mogen wij uw adres gegevens gebruiken voor contactopname?</label><br>
+      <form action="/action_page.php">
+        <input type="radio" id="useResidenceYes" name="useResidence" value="True">
+        <label for="UseResidenceYes"><i><b>Ja</b>, jullie mogen mijn adres gebruiken voor contactopname.</i></label><br>
+        <input type="radio" id="useResidenceNo" name="useResidence" value="False">
+        <label for="useAgeNo"><i><b>Nee</b>, jullie mogen mijn adres <b>niet</b> gebruiken voor contactopname.</i></label><br>
+      </form>
+      
+      <br>
+
+      <label for="useAge">Mogen wij uw leeftijd gebruiken voor anoniem statistieke doeleinde?</label><br>
+      <form action="/action_page.php">
+        <input type="radio" id="useAgeYes" name="useAge" value="True">
+        <label for="useAgeYes"><i><b>Ja</b>, jullie mogen mijn leeftijd gebruiken voor statistieke doeleinde.</i></label><br>
+        <input type="radio" id="useAgeNo" name="useAge" value="False">
+        <label for="useAgeNo"><i><b>Nee</b>, jullie mogen mijn leeftijd <b>niet</b> gebruiken voor statistieke doeleinde.</i></label><br>
+      </form>
+
+      <br>
+
+      <label for="usePhone">Mogen wij u bereiken op eerder ingevuld telefoon nummer?</label><br>
+      <form action="/action_page.php">
+        <input type="radio" id="usePhoneYes" name="usePhone" value="True">
+        <label for="usePhoneYes"><i><b>Ja</b>, .</i></label><br>
+        <input type="radio" id="usePhoneNo" name="usePhone" value="False"
+        <label for="usePhoneNo"<i><b>Nee</b>, .</i></label><br>
+      </form>
+      
+      <br>
+      <label for="useEmail">Mogen wij u bereiken via uw emailadres?</label><br>
+
+      <input type="submit" value="Save">
+    </form>
+  </main>
+</body>
+</html>

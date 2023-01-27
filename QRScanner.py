@@ -6,7 +6,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 # specify the absolute path to save the scanned_codes.json file
-path = os.path.join('C:\\Users\\rickt\\Desktop\\School file\\Rix&Co. Casusopdrachten\\ExhibitMe\\guestDatabase.json')
+path = os.path.join('C:\\Users\\rickt\\Desktop\\School file\\Rix&Co. Casusopdrachten\\ExhibitMe\\registeredGuests.json')
 
 # Create the GUI window
 root = Tk()
@@ -43,6 +43,8 @@ def update_frame():
             # Draw a bounding box around the code
             (x, y, w, h) = code.rect
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+            #save the guest automaticly
+            save_codes()
 
     # Display the frame
     cv2_im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -67,9 +69,6 @@ def save_codes():
         formatted_codes.append(code_dict)
     with open(path, "w") as f:
         json.dump(formatted_codes, f)
-
-save_btn = Button(root, text="Save Codes", command=save_codes)
-save_btn.pack()
 
 # Run the GUI
 root.mainloop()
