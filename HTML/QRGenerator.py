@@ -36,7 +36,7 @@ def JGD(): #stands for Json Guest Details
         
         # create the QR code
         qr = qrcode.QRCode(version=1, box_size=10, border=5)
-        qr.add_data(f"GuestNR:"+ {gNumber}+ "\nName:"+ {fName}+ " "+ {lName}+"\nAge:"+ {age}+ "\nGender:"+ {gender}+ "\nAddress:"+ {addressStr}+ " "+ {addressNr}+ "\nZip:"+ {addressZip}+ "\nPhone:"+ {phone}+ "\nEmail:"+ {email})
+        qr.add_data("GuestNR:"+ str(gNumber)+ "\nName:"+ str(fName)+ " "+ str(lName)+"\nAge:"+ str(age)+ "\nGender:"+ str(gender)+ "\nAddress:"+ str(addressStr)+ " "+ str(addressNr)+ "\nZip:"+ str(addressZip)+ "\nPhone:"+ str(phone)+ "\nEmail:"+ str(email))
         qr.make(fit=True)
 
         # create an image from the QR code

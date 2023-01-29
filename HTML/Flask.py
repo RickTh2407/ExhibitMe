@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect
+from flask import Flask, render_template, request, flash, redirect, Response
 import json
 import QRGenerator
 import QRScanner
@@ -68,6 +68,7 @@ def GDR(): #stands for GuestDetailsRegistery
     if (emailUseReg == "False") and (phoneUseReg == "False"):
         flash("Graag hebben wij één van uw contactgegevens voor u te bereiken.")
     else:
+        QRGenerator.JGD()
         return redirect("Inloggen.html")
     return render_template("Registreren.html")
         
@@ -100,6 +101,7 @@ def Login():
             return redirect('Guest.html')
     return render_template('Inloggen.html')
 
+#Gathers QR-code towards Guest page
 @app.route("/QR")
 def QRPrint():
     searchEmail = Login.loginEmail
@@ -111,9 +113,12 @@ def QRPrint():
             pngSearch = firstName[0] + lastName + ".png"
     return render_template("Guest.html", QR_Image=pngSearch)
 
-@app.route("/")
-def 
+#Takes camera towards Stand page
+@app.route("/Scanner")
+def QRScannerWeb():
+    return Response(QRScanner.Camera(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
+#Creates hosting port
 if __name__ == "__main__":
     app.debug = True
     app.run(host = "0.0.0.0", port = 5000)
