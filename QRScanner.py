@@ -6,7 +6,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 # specify the absolute path to save the scanned_codes.json file
-path = os.path.join('C:\\Users\\rickt\\Desktop\\School file\\Rix&Co. Casusopdrachten\\ExhibitMe\\registeredGuests.json')
+path = os.path.join("C:\\Users\\rickt\\Desktop\\School file\\Rix&Co. Casusopdrachten\\ExhibitMe\\registeredGuests.json")
 
 # Create the GUI window
 root = Tk()

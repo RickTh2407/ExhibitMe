@@ -3,7 +3,9 @@
         "S00000000":{
             "StandName":"AdminStance",
             "StandBio":"Test stance",
+            "StandBank":"NL00 RABO 0000 0000 00",
             "KVK":"9305 6589",
+            "CompanyWeb":"www.Google.com/",
             "StandPop":{
                 "1":"G00000001"
             }
@@ -11,7 +13,9 @@
         "S00000001":{
             "StandName":"InfraRed",
             "StandBio":"Stand van bedrijf InfraRed. Gespecialiseerd in cloud opbouw en onderhoud.",
+            "StandBank":"NL00 RABO 1234 5678 90",
             "KVK":"9305 6590",
+            "CompanyWeb":"www.Yahoo.com/",
             "StandPop":{
                 "1":"G00000001"
             }

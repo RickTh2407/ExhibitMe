@@ -14,6 +14,7 @@ with open("guestDatabase.json", "r") as f:
 def JGD(): #stands for Json Guest Details
     for guestNr in gData["Guests"].values():
     # extract the information per guest
+        gNumber = guestNr.get("CustomerNr")
         fName = guestNr.get("FirstName/CompanyName")
         lName = guestNr.get("LastName")
         age = guestNr.get("Age")
@@ -35,13 +36,7 @@ def JGD(): #stands for Json Guest Details
         
         # create the QR code
         qr = qrcode.QRCode(version=1, box_size=10, border=5)
-        qr.add_data(f"""Name: {fName} + " " + {lName}
-        Age: {age}
-        Gender: {gender}
-        Address: {addressStr} + {addressNr}
-        Zip: {addressZip}
-        Phone: {phone}
-        Email: {email}""")
+        qr.add_data(f"GuestNR:"+ {gNumber}+ "\nName:"+ {fName}+ " "+ {lName}+"\nAge:"+ {age}+ "\nGender:"+ {gender}+ "\nAddress:"+ {addressStr}+ " "+ {addressNr}+ "\nZip:"+ {addressZip}+ "\nPhone:"+ {phone}+ "\nEmail:"+ {email})
         qr.make(fit=True)
 
         # create an image from the QR code
